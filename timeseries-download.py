@@ -6,9 +6,9 @@ import zipfile
 
 # ENVIRONMENT DETAILS
 TOKEN = ''
-DATE = '10-03-2023'
-BASE_URL = 'https://api-dev.headspin.io'
-# BASE_URL = 'https://ericssonmana-api.ran.rc.us.am.ericsson.se'
+DATE = '10/03/2023'
+# BASE_URL = 'https://api-dev.headspin.io'
+BASE_URL = 'https://ericssonmana-api.ran.rc.us.am.ericsson.se'
 
 # Function to dynamically fetch keys for the Time Series Session Data
 def fetchKeys(SESSION):
@@ -129,8 +129,7 @@ def exportJSON(DATA):
 # Function to collect NUM ammount of sessions (defined at the top)
 def collectSessions(DATE):
     print(f"Collecting Sessions for {DATE}")
-    SESSIONS_API = f'{BASE_URL}/v0/sessions?include_all=true&tag=date:{DATE}&num_sessions=100'
-    # SESSIONS_API = f'{BASE_URL}/v0/sessions?include_all=true&tag=Date:{DATE}&num_sessions=100'
+    SESSIONS_API = f'{BASE_URL}/v0/sessions?include_all=true&tag=Date:{DATE}&num_sessions=100'
 
     try:
         response = requests.get(SESSIONS_API, headers={'Authorization': 'Bearer {}'.format(TOKEN)})
