@@ -6,7 +6,7 @@ import zipfile
 
 # ENVIRONMENT DETAILS
 TOKEN = ''
-DATE = '10/03/2023'
+DATE = '10-03-2023'
 BASE_URL = 'https://api-dev.headspin.io'
 
 # Function to dynamically fetch keys for the Time Series Session Data
