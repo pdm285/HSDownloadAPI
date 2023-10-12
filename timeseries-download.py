@@ -66,20 +66,6 @@ def fetchIssues(SESSION):
         print("Failed to fetch session info.")
         return "DOWNLOAD FAILED"
 
-            # for KEY in DATA:
-            #     for i in range(len(DATA[KEY])):
-                   
-            #        SESSION['start_time']
-            #     #    str(float(ENTRY[1])/1000 + SESSION['start_time'])
-            #        [DATA[KEY][i]['Issue Start'], DATA[KEY][i]['Issue End']] = ["a",'b']
-            #        print(i)
-
-                    
-
-    
-
-
-
 def exportToCSV(DATA,FILE):
     PATH = os.path.join(os.getcwd(), SESSION['session_id'])
     if not os.path.exists(PATH):
